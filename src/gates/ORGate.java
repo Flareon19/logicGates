@@ -39,7 +39,7 @@ public class ORGate {
     }
 
     public void printTruthTable() {
-        System.out.println("----Truth Table For AND Gate----");
+        System.out.println("----Truth Table For OR Gate----");
         System.out.println("\n0 OR 0 results 0\n" +
                 "0 OR 1 results 1\n" +
                 "1 OR 0 results 1\n" +
