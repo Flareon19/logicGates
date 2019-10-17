@@ -2,7 +2,6 @@ package gates;
 
 public class ANDGate {
     // Todo:
-    //  4. Complete the following methods
     private int input1;
     private int input2;
 
@@ -32,15 +31,18 @@ public class ANDGate {
     }
 
     private int getOutput(int input1, int input2) {
-        // write your code here
+        return input1 * input2;
     }
 
     private void printOutput(int input1, int input2) {
-        // write your code here
+        System.out.println(input1 * input2);
     }
 
     public void printTruthTable() {
         System.out.println("----Truth Table For AND Gate----");
-        // write your code here
+        System.out.println("\n0 AND 00 AND 0 results 0\n" +
+                "0 AND 1 results 0\n" +
+                "1 AND 0 results 0\n" +
+                "1 AND 1 results 1");
     }
 }
