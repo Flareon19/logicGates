@@ -29,7 +29,7 @@ public class NOTGate {
 
     public void printTruthTable() {
         System.out.println("----Truth Table For NOT Gate----");
-        System.out.println("\nNOT0 results 1\n" +
+        System.out.println("NOT0 results 1\n" +
                 "NOT1 results 0");
     }
 }

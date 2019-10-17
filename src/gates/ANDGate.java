@@ -39,7 +39,7 @@ public class ANDGate {
 
     public void printTruthTable() {
         System.out.println("----Truth Table For AND Gate----");
-        System.out.println("\n0 AND 0 results 0\n" +
+        System.out.println("0 AND 0 results 0\n" +
                 "0 AND 1 results 0\n" +
                 "1 AND 0 results 0\n" +
                 "1 AND 1 results 1");

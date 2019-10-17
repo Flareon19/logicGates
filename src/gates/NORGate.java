@@ -1,15 +1,15 @@
 package gates;
 
-public class ORGate {
+public class NORGate {
     private int input1;
     private int input2;
 
-    public ORGate() {
+    public NORGate() {
         input1 = 0;
         input2 = 0;
     }
 
-    public ORGate(int input1, int input2) {
+    public NORGate(int input1, int input2) {
         this.input1 = input1;
         this.input2 = input2;
     }
@@ -31,18 +31,18 @@ public class ORGate {
     }
 
     private int getOutput(int input1, int input2) {
-        return input1 + input2;
+        return (input1 + input2) == 0 ? 1 : 0;
     }
 
     private void printOutput(int input1, int input2) {
-        System.out.println(input1 + input2);
+        System.out.println((input1 + input2) == 0 ? 1 : 0);
     }
 
     public void printTruthTable() {
-        System.out.println("----Truth Table For OR Gate----");
-        System.out.println("0 OR 0 results 0\n" +
-                "0 OR 1 results 1\n" +
-                "1 OR 0 results 1\n" +
-                "1 OR 1 results 1");
+        System.out.println("----Truth Table For NOR Gate----");
+        System.out.println("0 NOR 0 results 1\n" +
+                "0 NOR 1 results 0\n" +
+                "1 NOR 0 results 0\n" +
+                "1 NOR 1 results 0");
     }
 }
