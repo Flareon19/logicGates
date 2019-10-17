@@ -44,4 +44,9 @@ public class ANDGate {
                 "1 AND 0 results 0\n" +
                 "1 AND 1 results 1");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

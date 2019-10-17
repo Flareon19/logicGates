@@ -45,4 +45,9 @@ public class NORGate {
                 "1 NOR 0 results 0\n" +
                 "1 NOR 1 results 0");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

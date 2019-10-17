@@ -45,4 +45,9 @@ public class ORGate {
                 "1 OR 0 results 1\n" +
                 "1 OR 1 results 1");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

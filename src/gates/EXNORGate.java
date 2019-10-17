@@ -45,4 +45,9 @@ public class EXNORGate {
                 "1 EXNOR 0 results 0\n" +
                 "1 EXNOR 1 results 1");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

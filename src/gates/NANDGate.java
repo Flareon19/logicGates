@@ -46,4 +46,9 @@ public class NANDGate {
                 "1 NAND 0 results 1\n" +
                 "1 NAND 1 results 0");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

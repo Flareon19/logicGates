@@ -48,4 +48,9 @@ public class EXORGate {
                 "1 EXOR 0 results 1\n" +
                 "1 EXOR 1 results 0");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input1, input2) + " ";
+    }
 }

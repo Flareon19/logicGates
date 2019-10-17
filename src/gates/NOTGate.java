@@ -32,4 +32,9 @@ public class NOTGate {
         System.out.println("NOT0 results 1\n" +
                 "NOT1 results 0");
     }
+
+    @Override
+    public String toString() {
+        return getOutput(input) + " ";
+    }
 }
