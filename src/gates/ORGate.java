@@ -1,14 +1,15 @@
 package gates;
 
-public class ANDGate {
+public class ORGate {
     private int input1;
     private int input2;
 
-    public ANDGate() {
+    public ORGate() {
         input1 = 0;
         input2 = 0;
     }
-    public ANDGate(int input1, int input2) {
+
+    public ORGate(int input1, int input2) {
         this.input1 = input1;
         this.input2 = input2;
     }
@@ -30,18 +31,18 @@ public class ANDGate {
     }
 
     private int getOutput(int input1, int input2) {
-        return input1 * input2;
+        return input1 + input2;
     }
 
     private void printOutput(int input1, int input2) {
-        System.out.println(input1 * input2);
+        System.out.println(input1 + input2);
     }
 
     public void printTruthTable() {
         System.out.println("----Truth Table For AND Gate----");
-        System.out.println("\n0 AND 0 results 0\n" +
-                "0 AND 1 results 0\n" +
-                "1 AND 0 results 0\n" +
-                "1 AND 1 results 1");
+        System.out.println("\n0 OR 0 results 0\n" +
+                "0 OR 1 results 1\n" +
+                "1 OR 0 results 1\n" +
+                "1 OR 1 results 1");
     }
 }
